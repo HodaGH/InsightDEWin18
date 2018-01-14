@@ -1,5 +1,5 @@
 # Youtube Influencer Search Engine
-A data pipeline for a search engine to detect youtube influencers.
+A data pipeline for a search engine to detect youtube influencers. This is a consulting project so details will not be shared here.
 
 1. [Overview](README.md#overview)
 2. [Data](README.md#data)
