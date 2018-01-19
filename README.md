@@ -1,5 +1,5 @@
-# Youtube Influencer Search Engine
-A data pipeline for a search engine to detect youtube influencers. This is a consulting project so details will not be shared here.
+# Youtube Ingestion
+I did a consulting project during my insight data engineering fellowship. The details of project and data pipeline won't be shared here. But an abstraction of my focus will be explained.
 
 1. [Overview](README.md#overview)
 2. [Data](README.md#data)
@@ -9,24 +9,24 @@ A data pipeline for a search engine to detect youtube influencers. This is a con
 
 ## Overview
 
-This project is part of my Insight Data Engineering fellowship in Silicon Valley for Winter 2018. The project takes youtube data from Youtube API, along with web scrapes, and ingests it for use in a influencer search engine application. 
+The goal of my project is to use and set up Youtube Data API (v3) and kafka to provide a real time and efficient ingestion system for youtube data. The goal is to set up youtube API to push notifications when any new video is posted to any channel. This method is more efficient than polling approach or retrieving all data related to all channels once awhile.
 
 ## Data
 
-The data comes form the youtube API and Web scraper. 
-For my project, I am going to use small size of data as sample data, but I choose my technologies to be scalable and able to handle the full dataset, while still providing low-latency responses to queries.
+The data comes form the youtube API. For my project, I am going to use small size of data as sample data, but I choose my technologies to be scalable and able to handle the full dataset, while still providing low-latency responses to queries.
 
-## Pipeline 
+## Technologies
+Google PubSub
+Google App Engine
+Google Big Query
+Google Storage
+Kafka
+Flask
+Plotly
+Pandas
+NumPy
+AWS S3
 
 ### Ingestion:
-Kafka
-### Data Format:
-Right now it is Jason beacuse Youtbue API generates data in Jason format. But Jason is slow to read. So this will probably change.
-### File System:
-AWS S3
-### Stream Processing Or Batch Processing [?]
-### Data Store [?]
-.
-.
 
 	
