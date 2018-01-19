@@ -16,16 +16,7 @@ The goal of my project is to use and set up Youtube Data API (v3) and kafka to p
 The data comes form the youtube API. For my project, I am going to use small size of data as sample data, but I choose my technologies to be scalable and able to handle the full dataset, while still providing low-latency responses to queries.
 
 ## Technologies
-Google PubSub
-Google App Engine
-Google Big Query
-Google Storage
-Kafka
-Flask
-Plotly
-Pandas
-NumPy
-AWS S3
+Google PubSub, Youtube Data API (v3), Google App Engine, Kafka, Flask, Python, AWS S3
 
 ### Ingestion:
 
