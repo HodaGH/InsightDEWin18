@@ -3,7 +3,7 @@ I did a consulting project during my insight data engineering fellowship. The de
 
 1. [Overview](README.md#overview)
 2. [Data](README.md#data)
-3. [Pipeline](README.md#pipeline)
+3. [Pipeline](README.md#technologies)
 
 <img src="img/demoPic.png" width="800">
 
