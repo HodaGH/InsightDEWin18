@@ -5,7 +5,6 @@ I did a consulting project during my insight data engineering fellowship. The de
 2. [Data](README.md#data)
 3. [Pipeline](README.md#technologies)
 
-<img src="img/demoPic.png" width="800">
 
 ## Overview
 
@@ -18,6 +17,7 @@ The data comes form the youtube API. For my project, I am going to use small siz
 ## Technologies
 Google PubSub, Youtube Data API (v3), Google App Engine, Kafka, Flask, Python, AWS S3
 
-### Ingestion:
+### Pipeline:
 
+<img src="img/pipeline.png" width="800">
 	
