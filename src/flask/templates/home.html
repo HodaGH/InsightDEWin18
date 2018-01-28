@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>Poll vs Push based Ingestion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container w3-red">
+  <h1>Poll based Ingestion</h1> 
+  <p>What youtube channels have got new videos?! Let's check every single of them!</p> 
+</div>
+
+<div class="w3-row-padding">
+    <table>
+    <tr> 
+    <td><h4>viewCount/ </h4></td> 
+    <td><h4>subscriberCount/ </h4></td>
+    <td><h4>videoCount/ </h4></td>
+    <td><h4>chId </h4></td>
+    </tr>
+    {% for key, value in rows.items() %}
+    <TR>
+    <TD class="c2”>{{value[0]}}</TD>
+    <TD class="c2”>{{value[1]}}</TD>
+    <TD class="c2”>{{value[2]}}</TD>
+    <TD class="c2”>{{value[3]}}</TD>
+    </TR>
+    {% endfor %}
+    </table>
+</div>
