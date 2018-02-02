@@ -1,5 +1,5 @@
-# Youtube Ingestion
-I did a consulting project during my insight data engineering fellowship. The details of project and data pipeline won't be shared here. But an abstraction of my focus will be explained.
+# Youtube Watcher
+I did a consulting project during my insight data engineering fellowship. The goal was to improve the ingestion part of the data pipeline and I proposed and implemented a model for real time ingestion which improved data ingestion efficiency in terms of bandwidth usage, cost and time. Also, I've proposed a solution in order to merge the new data with old data in real time for real time analysis. 
 
 1. [Overview](README.md#overview)
 2. [Data](README.md#data)
@@ -8,16 +8,16 @@ I did a consulting project during my insight data engineering fellowship. The de
 
 ## Overview
 
-The goal of my project is to use and set up Youtube Data API (v3) and kafka to provide a real time and efficient ingestion system for youtube data. The goal is to set up youtube API to push notifications when any new video is posted to any channel. This method is more efficient than polling approach or retrieving all data related to all channels once awhile.
+In this project, I've implemented real time data ingestion using Youtube Data API (v3), kafka  and redis to listen to youtube and get notificaiton when there is a change in any channel in real time. Then the channel Id and short statistics of the channel is stored in Redis. The goal is to set up youtube API to push notifications when any new video is posted to any channel. This method is more efficient than polling approach that fetch all data related to all channels once awhile.
 
 ## Data
 
-The data comes form the youtube API. For my project, I am going to use small size of data as sample data, but I choose my technologies to be scalable and able to handle the full dataset, while still providing low-latency responses to queries.
+There are two different stages for data ingestion. First is streaming changes thru kafka and second is getting whole data related to that channel from youtube. So all these data are streaming thru kafka back and forth.
 
 ## Technologies
-Google PubSub, Youtube Data API (v3), Google App Engine, Kafka, Flask, Python, AWS S3
+Google PubSub, Youtube Data API (v3),Kafka, Flask, Redis, Python, AWS S3, Cassandra.
 
 ### Pipeline:
 
-<img src="img/pipeline.png" width="800">
+<img src="img/pipeline.png" width="800"> 
 	
