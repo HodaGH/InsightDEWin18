@@ -1,8 +1,8 @@
 purchase_type: on_demand
-subnet_id: subnet-d26374b4
+subnet_id: subnet_id
 num_instances: 3
 key_name: Hoda-IAM-keypair
-security_group_ids: sg-6714201b
+security_group_ids: security_group_ids
 instance_type: m4.large
 tag_name: clusterOne
 vol_size: 100
