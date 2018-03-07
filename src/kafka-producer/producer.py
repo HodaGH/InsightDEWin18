@@ -1,6 +1,6 @@
 '''
 In this progeam, I use Youtube API to get statistics [viewCount, commentCount, subscribeCount, videoCount] of 1 million youtube channels.
-And each data will be streaming thru Kafka and the jason files will be processed in consumer thru Kafka stream.
+And each data will be streaming thru Kafka and the json files will be processed in consumer thru Kafka stream.
 '''
 import requests
 import re
